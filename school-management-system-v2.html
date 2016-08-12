@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>School Management System</title>
+<link rel="stylesheet" href="app.css" />
+<script src="1.12.4jquery.min.js"></script>
+<script src="school.management.system.v2.js"></script>
+</head>
+
+<body>
+
+<div class="main-wrapper">
+	
+	<div class="students-records">
+	 	<h2>Welcome to <span class="schoolName"></span></h2>
+		<div class="add-new-data">
+			<form name="addData">
+			<h3>Add New Students <span class="open-it">+</span></h3>
+			<table>
+				<tr class="add-input">
+					<td><input type="text" name="addName" value="" required="required" placeholder="Enter your name"></td>
+					<td>
+						<select name="addClass" required="required">
+							<option value="" selected>Select Class</option>
+						</select>
+					</td>
+					<td><input type="text" name="addSubject" required="required"  placeholder="Enter your subject"></td>
+				</tr>
+				<tr  class="add-input">
+					<td><input type="number" name="addFees" required="required"  placeholder="Enter your Fees"></td>
+					<td><input type="submit" name="submit" id="submit" value="Add"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><span class="error-message">All Fields are required </span></td>
+				</tr>
+			</table>
+			</form>
+
+			</div>
+			<!--add-new-data end here --->
+
+	  
+	  <section class="body">
+		<table width="100%">
+		  <thead>
+			<tr>
+				<th>Sr No.</th>
+				<th>Name</th>
+				<th>Class</th>
+				<th>Subjects</th>
+				<th class="stuFeesheading">Fees</th>
+			</tr>
+		  </thead>
+		  <tbody>
+		  
+		  </tbody>
+		</table>
+	  </section>
+	  
+	  <footer class="stu-footer myrow">
+		<div class="box left-side">
+			<p>Total Students : <span class="totalStudents"></span></p>
+		</div>
+		
+		<div class="box right-side">
+			<p>Total Fees <span class="totalFees"></span></p>
+		</div>
+		
+	  </footer>
+	  
+	</div>
+	<!-- Student records end here-->
+
+</div>
+<!-- Main wrapper end here -->
+
+</body>
+</html>

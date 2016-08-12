@@ -1,0 +1,44 @@
+body{font-family:arial;}
+.main-wrapper{    margin: 0px auto;    max-width: 800px;    border: 1px solid #ccc;    padding: 1%;}
+.main-wrapper .students-records{}
+.main-wrapper .students-records .heading-row{background: #F9F9F9;    padding: 10px;    border: 1px solid #F5F0F0;}
+.main-wrapper .students-records .heading-row:after,.main-wrapper .students-records .body:after{content:"";display:block;clear:both}
+.main-wrapper .students-records .heading-row .heading{    width: 19%;    float: left;    font-weight: bold;    text-transform: uppercase;    color: #6F6B6B;     font-size: 13px;}
+.main-wrapper .students-records .body{    background: #FBFAFA;    padding: 5px 10px;    border: 1px solid #F5F0F0;    margin-top: 5px;}
+.main-wrapper .students-records .body .data{width: 19%;    float: left;     text-transform: capitalize;    font-size: 13px;}
+.main-wrapper .students-records .body .data p{     min-height: 25px;    border-bottom: 1px solid #F1F1F1;    padding-top: 10px; }
+.main-wrapper .students-records .body .data.stuFees p{    background: #ccc;    width: 59%;    text-align: center;    margin: 12px auto;}
+.stuFeesheading{text-align:center;}
+.totalStudents {    background: green;    color: #fff;    display: inline-block;    padding: 5px;    border-radius: 12px;    width: 17px;    text-align: center;    height: 17px;}
+
+.seniorTeacher{    background: #BBFFC3 !important;}
+
+.body{}
+.body table{}
+.body table thead{    background: #EAE5E5;}
+.body table tr{}
+.body table tr th{    padding: 10px;    font-size: 15px;    text-align: left;}
+.body table tr td{    padding: 10px;    font-size: 13px;}
+.stu-footer{font-size: 14px;}
+.totalFees{    color: #5640FF;}
+
+.left-side{float:left;}
+.right-side{float:right}
+.myrow:after{content:""; display:table; clear:both;}
+
+.add-new-data{    background: #F5E6E6;    padding: 10px;    margin: 0;}
+.add-new-data table{}
+.add-new-data table tr{}
+
+.add-new-data table tr.add-input{}
+.add-new-data table tr.add-input input[type='text'],.add-new-data table tr.add-input input[type='number'],.add-new-data table tr.add-input select{    padding: 6px 7px;    border: 0;    color: #909090;    font-size: 15px;}
+.add-new-data table tr td{}
+#submit{    padding: 7px 18px;    display: inline-block;    border: 0;    background: linear-gradient(#11A011,#19CE59);    color: #fff;    width: 112px;    text-transform: uppercase; cursor:pointer}
+h3,h1,h2{    padding: 0;    margin: 5px;}
+
+.default-teacher{background:#c1c1c1}
+.error-message{color:#ccc;    font-size: 13px;    display: block;    text-align: center;    margin-top: 11px;}
+.errFalse{color:green}
+.errTrue{color:red;}
+
+.add-new-data h3{    color: #000;    font-size: 19px;    font-weight: 100;    text-align: c;    background: #E0D2D2;    padding: 5px 10px;}
