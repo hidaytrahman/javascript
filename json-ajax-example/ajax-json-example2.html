@@ -1,0 +1,47 @@
+<html>
+<head>
+<script>
+
+    function doIt()
+    {
+        
+        var xhr = new XMLHttpRequest();
+    var file = "myData.json";
+    
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState==4)
+            {
+                //alert("Working");
+                var myConvertedData = JSON.parse(xhr.response);
+                useData(myConvertedData);
+            }
+    }
+    
+    xhr.open("GET",file, true);
+    xhr.send();
+    
+    function useData(myData)
+    {
+        var getDiv = document.getElementById("content");
+        
+        for(var i=0; i<myData.empDetails.length; i++){
+            //document.write(myData.empDetails[i].name+"<br>");            
+             
+            var t = document.createTextNode(myData.empDetails[i].name);
+            var br = document.createTextNode("<br>");
+            getDiv.appendChild(t,document.createElement("br"));
+        }
+    }
+        
+    }
+    
+
+</script>    
+</head>
+    
+<body>
+<input type="button" onClick="doIt()" value="Click">
+<div id="content"></div>
+    
+</body>
+</html>
