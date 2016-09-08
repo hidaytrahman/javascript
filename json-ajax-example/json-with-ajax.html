@@ -1,0 +1,26 @@
+<script>
+    //create instance of object
+    var xhr = new XMLHttpRequest();
+    var file = "myData.json";
+    //creating event
+    xhr.onreadystatechange = function(){
+       //When file source is true
+        if(xhr.readyState==4)
+            {
+                var myConvertedData = JSON.parse(xhr.response);
+                useData(myConvertedData);
+            }
+    }
+    //calling functions
+    xhr.open("GET",file, true);
+    xhr.send();
+    
+    function useData(myData)
+    {
+        
+        for(var i=0; i<myData.empDetails.length; i++){
+            document.write(myData.empDetails[i].name+"<br>");    
+        }
+    }
+
+</script>
