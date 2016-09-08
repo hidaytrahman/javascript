@@ -1,0 +1,61 @@
+<html>
+<head>
+<script>
+
+var index = 0;
+function save()
+{
+	index++;
+
+	var names = [];
+	var txtName = document.getElementById("enterName").value;
+	names[index]= txtName;
+	
+	
+	
+	
+	names.push(txtName);
+	
+	localStorage.setItem("names", JSON.stringify(names));
+	
+	var storedNames = JSON.parse(localStorage.getItem("names"));
+	
+	console.log(index+" "+storedNames);
+	//document.write(index+" "+storedNames);
+	
+}
+
+
+//names[0] = prompt("New member name?");
+
+
+
+
+//...
+var storedNames = JSON.parse(localStorage.getItem("names"));
+
+console.log(storedNames);
+document.write(index+" "+storedNames);
+
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+
+
+<div id="main">
+	<input type="text" id="enterName" placeholder="Type Your name" />
+	<input type="button" id="submit" value="Save" onclick="save()">
+	
+</div>
+
+
+</body>
+
+</html>

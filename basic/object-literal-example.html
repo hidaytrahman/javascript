@@ -1,0 +1,26 @@
+<script>
+
+//Literal notation example
+	
+	var myObject  = {
+		iAm : "an Object",
+		what : function(){
+			return "I am "+this.iAm;
+		}
+	};
+
+	
+	var instance1 = myObject;
+	var instance2 = myObject;
+	
+	document.write("<br> instance 1 has <b>"+instance1.what()+"<br></b>");
+	document.write("<br> instance 2 has <b>"+instance2.what()+"<br>");
+	
+	instance1.iAm = "new object";
+	
+	document.write("</b><br> after new value instance 1 has <b>"+instance1.what()+"<br>");
+	document.write("</b><br> after new value instance 2 has <b>"+instance2.what()+"<br> <h2>Both has new object in literals but in constructor effects only on assigned instance</h2>");
+	
+
+
+</script>

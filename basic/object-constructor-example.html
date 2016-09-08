@@ -1,0 +1,25 @@
+<script>
+
+//Contructor object
+	function myObject()
+	{
+		this.iAm = "an Object";
+		this.what = function(){
+			return "I am "+this.iAm;
+		}
+	
+	}
+	
+	var instance1 = new myObject();
+	var instance2 = new myObject();
+	document.write("<b>"+instance2.what()+"</b><br > value of iAm variable instance 2:  <br>");
+	
+	document.write("<b>"+instance1.what()+"</b><br > after change value of iAm variable instance 1:  <br>");
+	
+	instance1.iAm = "new object"
+	
+	document.write("<b>"+instance1.what()+"</b>");
+	
+	document.write("<br> instance 2 <br><b>"+instance2.what());
+
+</script>
