@@ -1,0 +1,31 @@
+<script>
+	
+	
+	function addition(a,b)
+	{
+		(		
+			function data()
+			{
+				alert(a*b);
+				(function data1()
+				{
+					alert(a-b);
+				})();
+			}
+		)();
+		// Return data() ,data1(), data2();
+	}
+	
+	
+	(function(){
+	
+	})();
+	
+	function ok()
+	{
+		addition(10,5);
+	}
+	
+	ok();
+	
+</script>

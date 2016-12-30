@@ -1,0 +1,35 @@
+<script>
+/* Outputs the contents of all comment nodes that are descendants of the
+ * specified node. The parameter is:
+ *
+ * node - the node whose descendants should be searched
+ */
+function outputComments(node){
+
+  // initialise the child node
+  var child = node.firstChild;
+
+  // loop while the child node exists
+  while (child){
+
+    // determine the type of the node
+    switch (child.nodeType){
+
+      // if the node is an element node, recurse into it
+      case Node.ELEMENT_NODE : outputComments(child); break;
+
+      // if the node is a comment node, output its value
+      case Node.COMMENT_NODE : alert(child.nodeValue); break;
+
+    }
+
+    // move to the next child node
+    child = child.nextSibling;
+
+  }
+
+}
+
+// output the content of all comment nodes in the document
+outputComments(document.body);
+</script>

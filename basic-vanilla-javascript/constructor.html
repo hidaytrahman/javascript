@@ -1,0 +1,26 @@
+<script>
+	
+	//Create Constructor
+	function Office(type,emp,location)
+	{
+		this.type = type;
+		this.emp = emp;
+		this.location = location;
+		this.details = function(){
+			alert("This is "+this.type+" company. We have total "+this.emp+" employyes. \n Located in "+this.location);
+			console.log("This is "+this.type+" company. We have total "+this.emp+" employyes. \n Located in "+this.location);
+		}
+	}
+	
+	// Create Instance of Office Constructor
+	var ofc1 = new Office("IT",500,"Delhi");
+	var ofc2 = new Office ("MEDIA",1200,"Mumbai");
+	
+	// Use / Call
+	ofc1.details();
+	ofc2.details();
+	
+	//Check Instance
+	console.log(ofc1 instanceof Office);
+
+</script>

@@ -1,0 +1,38 @@
+
+<script>
+
+    function getJSON(){
+        
+        var file = "hidayt.json";
+
+       // var data = JSON.stringify(file);
+        
+        var http_request = new XMLHttpRequest();
+        
+        http_request.onreadystatechange =  function(){
+            
+            if(http_request.readyState==4)
+                {
+                    var jsonObj = JSON.parse(http_request.responseText);
+                    
+                    for(var i=0; i<jsonObj.country.length; i++)
+                    {
+                        document.write(jsonObj.country[i].name);
+                    }
+                }
+        }
+        
+        
+        http_request.open("GET",file, true);
+        http_request.send();
+// console.log(data);
+    }
+    
+    window.onload = function(){
+        
+        getJSON();
+    }
+
+
+
+</script>

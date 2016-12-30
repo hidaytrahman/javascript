@@ -1,0 +1,8 @@
+{
+	country : [
+		{code : "IND", name : "India"},
+		{code : "AMC", name : "America"},
+		{code : "UK", name : "United States"}
+		
+	]
+}

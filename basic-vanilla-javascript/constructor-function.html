@@ -1,0 +1,18 @@
+<script>
+
+
+	function Pet(name, species, hello){
+		this.name = name;
+		this.species = species;
+		this.hello = hello;
+		this.sayHello = function(){
+			alert(this.hello);
+		}
+	}
+	
+	var ok = new Pet("Hidayt","Spe","Hello");
+	
+	alert(ok.sayHello());
+
+
+</script>
